@@ -1,0 +1,238 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Be Vietnam", sans-serif;
+  line-height: 1.4;
+  background: url("./images/bg-tablet-pattern.svg") no-repeat 800px -200px;
+}
+
+/* utility classes */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  font-size: 14px;
+  background-color: hsl(12, 88%, 59%);
+  border-radius: 2rem;
+  color: #fff;
+  transition: opacity 300ms ease-in-out;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+.btn-light {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 2rem;
+  color: hsl(12, 88%, 59%);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(228, 39%, 23%);
+}
+p {
+  color: hsl(227, 12%, 61%);
+}
+
+/* Styling Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 1rem;
+  height: 100px;
+}
+ul a {
+  color: hsl(228, 39%, 23%);
+  padding: 0.7rem;
+  margin: 0.2rem;
+}
+ul a:hover {
+  opacity: 0.7;
+}
+nav ul {
+  display: flex;
+}
+
+/* styling main area */
+main {
+  display: flex;
+  gap: 40px;
+}
+.intro h1 {
+  font-size: 53px;
+  line-height: 1.2;
+  margin-top: 2rem;
+  padding: 2rem 0;
+}
+.intro p {
+  padding-bottom: 2rem;
+  width: 59%;
+}
+.intro a {
+  margin-bottom: 3rem;
+}
+
+/* styling info area*/
+.info {
+  background: url("./images/bg-tablet-pattern.svg") no-repeat -500px 250px;
+}
+
+/* Styling  features area*/
+.features {
+  display: flex;
+}
+.about,
+.c-features {
+  flex: 1;
+}
+.title {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.title h4:first-child {
+  position: absolute;
+  transform: translateX(-80px);
+  background-color: hsl(12, 88%, 59%);
+  border-radius: 2rem;
+  color: #fff;
+  padding: 0.29rem 1.2rem;
+}
+.c-features p {
+  margin-bottom: 2rem;
+}
+.about h1 {
+  font-size: xx-large;
+  padding-bottom: 1rem;
+}
+
+/* styling testimonials */
+.testimonials {
+  height: 300px;
+}
+.testimonials h1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+.card {
+  margin: 1rem auto;
+  background-color: #fafafa;
+  max-width: 500px;
+  text-align: center;
+}
+.card img {
+  width: 60px;
+}
+.card h4 {
+  margin: 1rem 0;
+}
+.card p {
+  padding: 0 2rem;
+}
+
+/* styling slider */
+.slider {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling next and previous btns */
+.next,
+.previous {
+  align-self: center;
+  margin: 0 1.5rem;
+}
+.next button,
+.previous button {
+  font-size: 2rem;
+  background-color: #fff;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.testimonial-btn {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Stealing team area */
+.team {
+  background-color: hsl(12, 88%, 59%);
+}
+.work {
+  display: flex;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+  background: url("./images/bg-simplify-section-desktop.svg") no-repeat 0px -100px;
+}
+.work h2 {
+  color: #fff;
+}
+
+/* Styling footer */
+footer {
+  background-color: hsl(233, 12%, 13%);
+  padding: 2rem 0;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+footer li {
+  padding: 0.3rem;
+}
+footer li a {
+  color: #fff;
+}
+.social-links img {
+  padding: 0.3rem;
+}
+.subscription #useremail {
+  padding: 0.6rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+}
+.subscription .btn {
+  cursor: pointer;
+  border: none;
+  margin-left: 0.2rem;
+}
+.copyright {
+  color: #fff;
+  text-align: right;
+}
+.copyright p {
+  color: #fff;
+}
+.grid-item:last-child {
+  grid-column: 4;
+  text-align: right;
+}
